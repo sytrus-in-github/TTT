@@ -1,7 +1,16 @@
 \begin{titlepage}
 
+% INFORMATIK logo
+\begin{textblock*}{\textwidth}(\coverborderleft, 2cm)%
+		\ifx \monochromeCoverInside \undefined
+        	\includegraphics[scale=0.8]{images/TUM_Logos/IN_blau.pdf}%
+        \else
+        	\includegraphics[scale=0.8]{images/TUM_Logos/IN_schwarz.pdf}%
+        \fi
+\end{textblock*}%
+
 % Dreizeiler:
-\begin{textblock*}{\textwidth}(\coverborderleft, 2cm)%        	
+\begin{textblock*}{\textwidth}(\coverborderleft + 1cm, 2cm)%        	
     	\setlength{\baselineskip}{11pt}%
     	\ifx \monochromeCoverInside \undefined
         	\textcolor{UniversitaetFarbe} { %
@@ -10,7 +19,7 @@
         	\sffamily \faculty\\%
         	\sffamily \uni }
     \else
-        	\textcolor{black} { %
+        \textcolor{black} { %
         	\fontsize{9}{11}\selectfont%
         	\sffamily \chair\\%
         	\sffamily \faculty\\%
@@ -22,7 +31,9 @@
 \begin{textblock*}{\UniversitaetLogoBreite}[1,0](\paperwidth - 2cm, 2cm)%
 		\ifx \monochromeCoverInside \undefined
         	\includegraphics{images/TUM_Logos/TUM_blau.pdf}%
+        % \includegraphics{images/TUM_Logos/IN_blau.pdf}%
         \else
+        	% \includegraphics[scale=0.8]{images/TUM_Logos/IN_schwarz.pdf}
         	\includegraphics{images/TUM_Logos/TUM_schwarz.pdf}%
         \fi
 \end{textblock*}%

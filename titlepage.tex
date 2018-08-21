@@ -1,7 +1,16 @@
 \begin{titlepage}
 
+% INFORMATIK logo
+\begin{textblock*}{\textwidth}(\coverborderleft, 2cm)%
+		\ifx \monochromeCover \undefined
+        	\includegraphics[scale=0.8]{images/TUM_Logos/IN_blau.pdf}%
+        \else
+        	\includegraphics[scale=0.8]{images/TUM_Logos/IN_schwarz.pdf}%
+        \fi
+\end{textblock*}%
+
 % Dreizeiler:
-\begin{textblock*}{\textwidth}(\coverborderleft, 2cm)%        	
+\begin{textblock*}{\textwidth}(\coverborderleft + 1cm, 2cm)%       	
     	\setlength{\baselineskip}{11pt}%
     	\ifx \monochromeCover \undefined
         	\textcolor{UniversitaetFarbe} { %
